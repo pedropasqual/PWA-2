@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sistema PWA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4CAF50">
+</head>
+<body>
+    <!-- Menu de Navegação -->
+    <nav class="menu">
+        <a href="index.html" class="active">
+            <span class="icon">🏠</span>
+            <span>Início</span>
+        </a>
+        <a href="produtos.html">
+            <span class="icon">📦</span>
+            <span>Produtos</span>
+        </a>
+        <a href="clientes.html">
+            <span class="icon">👥</span>
+            <span>Clientes</span>
+        </a>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <h1>📊 Dashboard</h1>
+        <div class="cards">
+            <div class="card">
+                <h3>Total Produtos</h3>
+                <p class="numero" id="totalProdutos">0</p>
+            </div>
+            <div class="card">
+                <h3>Total Clientes</h3>
+                <p class="numero" id="totalClientes">0</p>
+            </div>
+        </div>
+        
+        <div class="welcome">
+            <h2>Bem-vindo ao Sistema!</h2>
+            <p>Gerencie seus produtos e clientes de forma simples e eficiente.</p>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

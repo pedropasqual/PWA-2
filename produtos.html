@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Produtos - Sistema PWA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4CAF50">
+</head>
+<body>
+    <nav class="menu">
+        <a href="index.html">
+            <span class="icon">🏠</span>
+            <span>Início</span>
+        </a>
+        <a href="produtos.html" class="active">
+            <span class="icon">📦</span>
+            <span>Produtos</span>
+        </a>
+        <a href="clientes.html">
+            <span class="icon">👥</span>
+            <span>Clientes</span>
+        </a>
+    </nav>
+
+    <main class="container">
+        <h1>📦 Gerenciar Produtos</h1>
+        
+        <!-- Formulário para adicionar produto -->
+        <div class="form-container">
+            <h3>Adicionar Produto</h3>
+            <input type="text" id="nomeProduto" placeholder="Nome do produto">
+            <input type="number" id="precoProduto" placeholder="Preço">
+            <button onclick="adicionarProduto()">Adicionar</button>
+        </div>
+
+        <!-- Lista de produtos -->
+        <div id="listaProdutos" class="lista">
+            <p>Carregando produtos...</p>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

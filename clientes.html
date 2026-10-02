@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Clientes - Sistema PWA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4CAF50">
+</head>
+<body>
+    <nav class="menu">
+        <a href="index.html">
+            <span class="icon">🏠</span>
+            <span>Início</span>
+        </a>
+        <a href="produtos.html">
+            <span class="icon">📦</span>
+            <span>Produtos</span>
+        </a>
+        <a href="clientes.html" class="active">
+            <span class="icon">👥</span>
+            <span>Clientes</span>
+        </a>
+    </nav>
+
+    <main class="container">
+        <h1>👥 Gerenciar Clientes</h1>
+        
+        <!-- Formulário para adicionar cliente -->
+        <div class="form-container">
+            <h3>Adicionar Cliente</h3>
+            <input type="text" id="nomeCliente" placeholder="Nome do cliente">
+            <input type="email" id="emailCliente" placeholder="E-mail">
+            <button onclick="adicionarCliente()">Adicionar</button>
+        </div>
+
+        <!-- Lista de clientes -->
+        <div id="listaClientes" class="lista">
+            <p>Carregando clientes...</p>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
